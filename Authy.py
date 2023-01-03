@@ -1,9 +1,11 @@
 from api import *
-import pyotp
-def huh():
+if accdict:
  for account, token in accdict.items():
-    print("--------------------")
-    print("User: ", account)
-    print("OTP:", getOTP(token))
-    print("--------------------")
-    
+     print("--------------------")
+     print("User: ", account)
+     print("OTP:", getOTP(token))
+     print("--------------------")
+else:
+  print("Please Add Your Tokens in addacc.py")
+  exit()      
+ 
